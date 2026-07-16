@@ -11,7 +11,7 @@
 
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">Portfolio.</div>
+    <div class="logo"> My Designs Portfolio.</div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Work</a></li>
       <li><a href="about.html">About</a></li>
@@ -19,12 +19,11 @@
     </ul>
   </nav>
 
-  <!-- New About Me Hero Section -->
-  <header class="about-hero">
+   <header class="about-hero">
     <div class="hero-content">
       <h1>Translating Complex Science into Visual Clarity</h1>
       <p>
-        Hi, I am Alia Siddiqui. I am a final-year Biomedical Science undergraduate blending high-throughput data analysis, space biology, and structural modeling with visual storytelling. Whether it is presenting multi-omics data for hepatocellular carcinoma or pitching astrobiology concepts, my goal is to make dense scientific research accessible, accurate, and visually compelling.
+        Hi, I am Alia Siddiqui. I am a final-year Biomedical Science undergraduate blending high-throughput data analysis, space biology, structural modeling and 3D modeling with visual storytelling. Whether it is presenting multi-omics data for hepatocellular carcinoma or pitching astrobiology concepts, my goal is to make dense scientific research accessible, accurate, and visually compelling.
       </p>
     </div>
     <div class="hero-image">
@@ -38,7 +37,9 @@
     <button class="filter-btn active" data-filter="all">All Work</button>
     <button class="filter-btn" data-filter="scientific">Scientific Conference Posters</button>
     <button class="filter-btn" data-filter="informational">Informational Posters</button>
-    <button class="filter-btn" data-filter="pitch-decks">Pitch Decks</button>
+    <!-- <button class="filter-btn" data-filter="pitch-decks">Pitch Decks</button> -->
+    <button class="filter-btn" data-filter="events">Events Posters</button>
+    <button class="filter-btn" data-filter="logos">Logos</button>
     <button class="filter-btn" data-filter="3d-models">3D Models</button>
     <button class="filter-btn" data-filter="others">Others</button>
   </div>
@@ -46,10 +47,10 @@
   <!-- Portfolio Gallery Grid -->
   <main class="poster-gallery">
 
-<!-- Item 4: Informational Poster -->
+<!-- Item 1: Informational Poster -->
     <div class="poster-card" data-category="informational">
       <div class="badge">Winner of Top 10 Best Posters Award</div>
-      <img src="assets\posters\BioE3_P1.png" alt="BioE3 Poster 1">
+      <img src="assets\posters\Informational Posters\BioE3_P1.png" alt="BioE3 Poster 1">
       <div class="card-content">
         <h3>Leveraging Synthetic Biology in Space Missions</h3>
         <p class="tags">#ScienceCommunication #SyntheticBiology #SpaceMission #BIOE3</p>
@@ -58,17 +59,45 @@
 
     <div class="poster-card" data-category="informational">
       <div class="badge">Winner of Top 10 Best Posters Award</div>
-      <img src="assets\posters\BioE3_P2.jpeg" alt="BioE3 Poster 2">
+      <img src="assets\posters\Informational Posters\BioE3_P2.jpeg" alt="BioE3 Poster 2">
       <div class="card-content">
         <h3> Designing Life for Mars Mission using Synthetic Biology</h3>
         <p class="tags">#ScienceCommunication #SyntheticBiology #TerraformingMars #BIOE3</p>
       </div>
     </div>
 
-    <!-- Item 1: Scientific Poster -->
+    <!-- Item 2: Events Poster -->
+    <div class="poster-card" data-category="events">
+      <!-- <div class="badge">Winner of Top 10 Best Posters Award</div> -->
+      <img src="assets\posters\Event Posters\AI Talk_Poster.png" alt="AI talks Poster">
+      <div class="card-content">
+        <h3>AI Talks: Exploring the Future of Artificial Intelligence</h3>
+        <p class="tags">#AI #MachineLearning #Technology #FutureTech</p>
+      </div>
+    </div>
+
+     <div class="poster-card" data-category="events">
+      <!-- <div class="badge">Winner of Top 10 Best Posters Award</div> -->
+      <img src="assets\posters\Event Posters\AI in Biomedical Research_poster.png" alt="AI in Biomedical Research Poster">
+      <div class="card-content">
+        <h3>AI in Biomedical Research</h3>
+        <p class="tags">#AI #BiomedicalResearch #MachineLearning #Healthcare</p>
+      </div>
+    </div>
+
+<div class="poster-card" data-category="events">
+      <!-- <div class="badge">Winner of Top 10 Best Posters Award</div> -->
+      <img src="assets\posters\Event Posters\BasicScienceRizz (1).png" alt="BMS Got Talent Poster">
+      <div class="card-content">
+        <h3>BMS Got Talent</h3>
+        <p class="tags">#Cathexis #DepartmentEvent #TalentShow</p>
+      </div>
+    </div>
+
+    <!-- Item 3: Scientific Poster -->
     <div class="poster-card" data-category="scientific conference">
       <!-- <div class="badge">1st Place SciVision</div> -->
-      <img src="assets\posters\DU Exhibition April 2026.png" alt="Dissertation Poster">
+      <img src="assets\posters\Conference Posters\DU Exhibition April 2026.png" alt="Dissertation Poster">
        <div class="card-content">
         <h3>Integrative Bioinformatic and In-Vitro Validation Reveals a Novel Diagnostic Target in Hepatocellular Carcinoma </h3>
         <p>Presented at Undergraduate Research and Entrepreneurship Exhibition 2026, DU </p>
@@ -78,7 +107,7 @@
 
     <div class="poster-card" data-category="scientific conference">
       <!-- <div class="badge">1st Place SciVision</div> -->
-      <img src="assets\posters\Shodh'25_Poster_Alia.png" alt="SPINK1 Biomarker Poster">
+      <img src="assets\posters\Conference Posters\Shodh'25_Poster_Alia.png" alt="SPINK1 Biomarker Poster">
       <div class="card-content">
         <h3>SPINK1 as an Early-Stage Diagnostic Biomarker for HCC</h3>
         <p>Presented in Shodh Udaan 2025 - National Level Undergraduate Research Conference</p>
@@ -89,7 +118,7 @@
 
     <div class="poster-card" data-category="scientific poster">
       <div class="badge">1st Place SciVision</div>
-      <img src="assets\posters\Trends in Biomedical Science research.png" alt="Trends in Biomedical Science research">
+      <img src="assets\posters\Conference Posters\Trends in Biomedical Science research.png" alt="Trends in Biomedical Science research">
        <div class="card-content">
         <h3>Trends in Biomedical Science Research</h3>
         <p>Presented in SciVision Poster Presentation Competition - at Bhaskaracharya College, DU </p>
@@ -98,7 +127,7 @@
     </div>
 
     <div class="poster-card" data-category="scientific conference">
-      <img src="assets\posters\MR in STEM ed INSCR poster.png" alt="AR VR in STEM education Poster">
+      <img src="assets\posters\Conference Posters\MR in STEM ed INSCR poster.png" alt="AR VR in STEM education Poster">
        <div class="card-content">
         <h3>A Pedagogical Approach to STEM Education using Mixed Reality </h3>
         <p>Presented at 8th International Conference of INSCR & 4th International Symposium on Ciliate Biology </p>
@@ -126,6 +155,26 @@
       </div>
     </div> -->
 
+     <!-- Item 4: Others -->
+    <div class="poster-card" data-category="others">
+      <!-- <div class="badge">1st Place SciVision</div> -->
+      <img src="assets\posters\Others\loss memory and the transience of life a poster.png" alt="Loss, Memory and the Transience of Life Poster">
+       <div class="card-content">
+        <h3>Loss, Memory and the Transience of Life</h3>
+        <!-- <p>Presented in SciVision Poster Presentation Competition - at Bhaskaracharya College, DU </p> -->
+        <p class="tags">#Poster #TransienceOfLife #Philosophy</p>
+      </div>
+    </div>
+
+     <!-- Item 5: Logos -->
+    <div class="poster-card" data-category="logos">
+      <!-- <div class="badge">1st Place SciVision</div> -->
+      <img src="assets\posters\Logos\CATHEXIS_Logo Design.png" alt="Logo Design for Cathexis">
+       <div class="card-content">
+        <h3>Logo Design for Cathexis</h3>
+        <!-- <p>Presented in SciVision Poster Presentation Competition - at Bhaskaracharya College, DU </p> -->
+        <p class="tags">#LogoDesign #Cathexis #DepartmentEvent</p>
+      </div>
 
   </main>
   
