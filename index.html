@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Poster Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Portfolio.</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="portfolio-header">
+    <h1>Translating Complex Science into Visual Clarity</h1>
+    <p>Award-winning scientific posters and visual communication.</p>
+  </header>
+
+  <!-- Filter Menu -->
+  <div class="filter-menu">
+    <!-- The data-filter attribute tells the JS what to look for -->
+    <button class="filter-btn active" data-filter="all">All Work</button>
+    <button class="filter-btn" data-filter="awards">Award Winners</button>
+    <button class="filter-btn" data-filter="oncology">Oncology & Genomics</button>
+    <button class="filter-btn" data-filter="astrobiology">Astrobiology</button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <main class="poster-gallery">
+
+    <!-- Poster 1: SciVision Winner -->
+    <div class="poster-card" data-category="awards oncology">
+      <div class="badge">1st Place SciVision</div>
+      <!-- Replace the src with your actual image path -->
+      <img src="assets/posters/spink1-hcc-poster.webp" alt="SPINK1 Biomarker Poster">
+      <div class="card-content">
+        <h3>SPINK1 as an Early-Stage Diagnostic Biomarker for Hepatocellular Carcinoma</h3>
+        <p class="tags">#Transcriptomics #Multi-Omics</p>
+      </div>
+    </div>
+
+    <!-- Poster 2: Space Biology -->
+    <div class="poster-card" data-category="awards astrobiology">
+      <div class="badge">2nd Place BRIC NII</div>
+      <img src="assets/posters/mars-terraforming.webp" alt="Martian Terraforming Poster">
+      <div class="card-content">
+        <h3>Exploring the Potential of Synthetic Biology in Terraforming Martian Atmosphere</h3>
+        <p class="tags">#SpaceBiology #SyntheticBiology</p>
+      </div>
+    </div>
+
+    <!-- Poster 3: Oncology (No Award Badge) -->
+    <div class="poster-card" data-category="oncology">
+      <img src="assets/posters/liver-cancer-biomarkers.webp" alt="Liver Cancer Data Analysis">
+      <div class="card-content">
+        <h3>Discovering Novel Hepatocellular Carcinoma Biomarkers through Multi-Omics Analysis</h3>
+        <p class="tags">#Bioinformatics #R #Python</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Link the JavaScript file at the end of the body -->
+  <script src="js/script.js"></script>
+</body>
+</html>
