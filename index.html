@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scientific Poster Portfolio</title>
+  <title>Scientific Design Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,57 +18,73 @@
     </ul>
   </nav>
 
-  <!-- Header Section -->
-  <header class="portfolio-header">
-    <h1>Translating Complex Science into Visual Clarity</h1>
-    <p>Award-winning scientific posters and visual communication.</p>
+  <!-- New About Me Hero Section -->
+  <header class="about-hero">
+    <div class="hero-content">
+      <h1>Translating Complex Science into Visual Clarity</h1>
+      <p>
+        I am a final-year Biomedical Science undergraduate blending high-throughput data analysis, space biology, and structural modeling with visual storytelling. Whether it is presenting multi-omics data for hepatocellular carcinoma or pitching astrobiology concepts, my goal is to make dense scientific research accessible, accurate, and visually compelling.
+      </p>
+    </div>
+    <div class="hero-image">
+      <!-- Replace with your profile picture -->
+      <img src="assets/profile-placeholder.webp" alt="Profile Picture">
+    </div>
   </header>
 
-  <!-- Filter Menu -->
+  <!-- Updated Filter Menu -->
   <div class="filter-menu">
-    <!-- The data-filter attribute tells the JS what to look for -->
     <button class="filter-btn active" data-filter="all">All Work</button>
-    <button class="filter-btn" data-filter="awards">Award Winners</button>
-    <button class="filter-btn" data-filter="oncology">Oncology & Genomics</button>
-    <button class="filter-btn" data-filter="astrobiology">Astrobiology</button>
+    <button class="filter-btn" data-filter="scientific">Scientific Conference Posters</button>
+    <button class="filter-btn" data-filter="informational">Informational Posters</button>
+    <button class="filter-btn" data-filter="pitch-decks">Pitch Decks</button>
+    <button class="filter-btn" data-filter="3d-models">3D Models</button>
+    <button class="filter-btn" data-filter="others">Others</button>
   </div>
 
   <!-- Portfolio Gallery Grid -->
   <main class="poster-gallery">
 
-    <!-- Poster 1: SciVision Winner -->
-    <div class="poster-card" data-category="awards oncology">
+    <!-- Item 1: Scientific Poster -->
+    <div class="poster-card" data-category="scientific">
       <div class="badge">1st Place SciVision</div>
-      <!-- Replace the src with your actual image path -->
       <img src="assets/posters/spink1-hcc-poster.webp" alt="SPINK1 Biomarker Poster">
       <div class="card-content">
-        <h3>SPINK1 as an Early-Stage Diagnostic Biomarker for Hepatocellular Carcinoma</h3>
-        <p class="tags">#Transcriptomics #Multi-Omics</p>
+        <h3>SPINK1 as an Early-Stage Diagnostic Biomarker for HCC</h3>
+        <p class="tags">#ScientificPoster #Multi-Omics</p>
       </div>
     </div>
 
-    <!-- Poster 2: Space Biology -->
-    <div class="poster-card" data-category="awards astrobiology">
+    <!-- Item 2: Pitch Deck -->
+    <div class="poster-card" data-category="pitch-decks">
       <div class="badge">2nd Place BRIC NII</div>
-      <img src="assets/posters/mars-terraforming.webp" alt="Martian Terraforming Poster">
+      <img src="assets/posters/space-pitch-deck.webp" alt="Space Biology Pitch Deck">
       <div class="card-content">
-        <h3>Exploring the Potential of Synthetic Biology in Terraforming Martian Atmosphere</h3>
-        <p class="tags">#SpaceBiology #SyntheticBiology</p>
+        <h3>Our Dream Biological Experiment in Space</h3>
+        <p class="tags">#PitchDeck #Astrobiology</p>
       </div>
     </div>
 
-    <!-- Poster 3: Oncology (No Award Badge) -->
-    <div class="poster-card" data-category="oncology">
-      <img src="assets/posters/liver-cancer-biomarkers.webp" alt="Liver Cancer Data Analysis">
+    <!-- Item 3: 3D Model -->
+    <div class="poster-card" data-category="3d-models">
+      <img src="assets/posters/aptamer-model.webp" alt="PyMOL 3D Model">
       <div class="card-content">
-        <h3>Discovering Novel Hepatocellular Carcinoma Biomarkers through Multi-Omics Analysis</h3>
-        <p class="tags">#Bioinformatics #R #Python</p>
+        <h3>Syl3C Aptamer Interactions with EpCAM Receptors</h3>
+        <p class="tags">#3DModel #PyMOL #StructuralBiology</p>
+      </div>
+    </div>
+
+    <!-- Item 4: Informational Poster -->
+    <div class="poster-card" data-category="informational">
+      <img src="assets/posters/synthetic-biology.webp" alt="Informational Poster">
+      <div class="card-content">
+        <h3>The Potential of Synthetic Biology in Martian Terraforming</h3>
+        <p class="tags">#Informational #ScienceCommunication</p>
       </div>
     </div>
 
   </main>
-
-  <!-- Link the JavaScript file at the end of the body -->
+  
   <script src="js/script.js"></script>
 </body>
 </html>
