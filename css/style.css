@@ -212,3 +212,146 @@ body {
 .hide {
   display: none;
 }
+
+/* --- ABOUT PAGE STYLES --- */
+.about-page {
+  padding: 4rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.about-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.award-list {
+  list-style-type: none;
+}
+
+.award-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: var(--text-secondary);
+}
+
+.award-list li strong {
+  color: var(--accent-color);
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* --- CONTACT PAGE STYLES --- */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.contact-container {
+  text-align: center;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  max-width: 600px;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-container p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-color);
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.contact-btn.outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: #d1d8e0;
+}
+
+.contact-btn.outline:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Mobile Responsiveness for new pages */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .contact-container {
+    padding: 2rem;
+  }
+}
